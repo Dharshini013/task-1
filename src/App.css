@@ -1,4 +1,3 @@
-/* Ensure full viewport coverage without overflow */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Full Page Container */
 .app-body {
   height: 100vh;
   width: 100vw;
@@ -14,10 +12,9 @@
   justify-content: center;
   align-items: center;
   background-color: #ebe4f8;
-  overflow: hidden; /* Prevents scrolling */
+  overflow: hidden; 
 }
 
-/* Center the grid */
 .app-container {
   display: flex;
   justify-content: center;
@@ -26,48 +23,45 @@
   height: 100%;
 }
 
-/* Grid Layout */
 .grid-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-  grid-template-rows: 1fr 1fr 1fr; /* Three equal rows */
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
   gap: 15px;
-  width: 95vw; /* Takes almost full width */
-  height: 95vh; /* Takes almost full height */
+  width: 95vw; 
+  height: 95vh; 
 }
 
-/* Grid Areas */
 .a11 {
   grid-column: 1 / 2;
-  grid-row: 1 / 3; /* Occupies a11 and a21 */
+  grid-row: 1 / 3; 
 }
 
 .a12 {
   grid-column: 2 / 4;
-  grid-row: 1 / 2; /* Occupies a12 and a13 */
+  grid-row: 1 / 2; 
 }
 
 .a22 {
   grid-column: 2 / 3;
-  grid-row: 2 / 3; /* Apply occupies a22 */
+  grid-row: 2 / 3; 
 }
 
 .a23 {
   grid-column: 3 / 4;
-  grid-row: 2 / 4; /* ChangeMembership occupies a23 and a33 */
+  grid-row: 2 / 4; 
 }
 
 .a31 {
   grid-column: 1 / 2;
-  grid-row: 3 / 4; /* PaymentInfo occupies a31 */
+  grid-row: 3 / 4; 
 }
 
 .a32 {
   grid-column: 2 / 3;
-  grid-row: 3 / 4; /* AddDocument occupies a32 */
+  grid-row: 3 / 4; 
 }
 
-/* General Card Styling */
 .a11, .a12, .a22, .a23, .a31, .a32 {
   background: white;
   border-radius: 10px;
@@ -78,12 +72,10 @@
   padding: 20px;
 }
 
-/* Make each card responsive */
 .a11, .a12, .a22, .a23, .a31, .a32 {
-  min-height: 100px; /* Prevents collapsing */
+  min-height: 100px; 
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1200px) {
   .grid-layout {
     grid-template-columns: 1fr 1fr;
