@@ -5,7 +5,7 @@ import Apply from './frontend/apply';
 import ChangeMembership from './frontend/change';
 import AddDocument from './frontend/add';
 import PaymentInfo from './frontend/payment';
-import './App.css'; // Import CSS for layout
+import './App.css'; 
 
 const App = () => {
   return (
