@@ -1,5 +1,5 @@
 import React from "react";
-import "../frontend/VehicleCard.css"; // Make sure this file is linked in your project
+import "../frontend/VehicleCard.css"; 
 
 const VehicleCard = () => {
   return (
